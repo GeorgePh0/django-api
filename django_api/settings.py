@@ -60,7 +60,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['https://django-api-tutorial-3df2781d00de.herokuapp.com/' '8000-georgeph0-djangoapi-ro4ld7i15ce.ws-eu107.gitpod.io']
+ALLOWED_HOSTS = ['https://django-api-tutorial-3df2781d00de.herokuapp.com/', '8000-georgeph0-djangoapi-ro4ld7i15ce.ws-eu107.gitpod.io']
 
 # '8000-georgeph0-djangoapi-ro4ld7i15ce.ws-eu107.gitpod.io'
 
