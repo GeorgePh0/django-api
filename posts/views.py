@@ -1,5 +1,5 @@
 from django.db.models import Count
-from rest_framework import generics, permissions
+from rest_framework import generics, permissions, filters
 from django_filters.rest_framework import DjangoFilterBackend
 from django_api.permissions import IsOwnerOrReadOnly
 from .models import Post
@@ -19,7 +19,7 @@ class PostList(generics.ListCreateAPIView):
     ).order_by('-created_at')
     filter_backends = [
         filters.OrderingFilter,
-        filters_SearchFilter,
+        filters.SearchFilter,
         DjangoFilterBackend,
     ]
     filterset_fields = [
