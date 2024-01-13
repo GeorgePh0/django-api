@@ -63,8 +63,6 @@ DEBUG = 'DEV' in os.environ
 
 ALLOWED_HOSTS = [os.environ.get('ALLOWED_HOST'), '8000-georgeph0-djangoapi-ro4ld7i15ce.ws-eu107.gitpod.io']
 
-# '8000-georgeph0-djangoapi-ro4ld7i15ce.ws-eu107.gitpod.io'
-
 
 # Application definition
 
